@@ -9,10 +9,9 @@ import os
 def main():
     i = 0
 
-    for filename in os.listdir("cats"): #xyz is folder's name
+    for filename in os.listdir(): #xyz is folder's name
         dst = "catpic" + str(i) + ".jpg"
-        src = 'cats' + filename
-        dst = 'cats' + dst
+        src = filename
 
         # rename() function will
         # rename all the files
